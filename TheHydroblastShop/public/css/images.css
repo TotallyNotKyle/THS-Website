@@ -1,0 +1,138 @@
+﻿.image-home {
+	max-width: 75%;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+	margin: 20px 0px 40px 0px;
+}
+.load-more {
+	text-align:center;
+	height:34px;
+	margin-top:20px;
+}
+.box {
+	width: 30%;
+	height: auto;
+	max-width: 100%;
+	display: inline-block;
+	margin: 10px 10px 0px 10px;
+}
+.thumb {
+	display: inline-block;
+	width: 100%;
+}
+.thumb img, .project img {
+	cursor: pointer;
+	width:100%;
+	display: inline-block;
+	vertical-align: middle;
+	opacity: 1;
+	transition: opacity 0.2s;
+	-webkit-transition: opacity 0.2s;
+}
+.thumb img:hover, .project img:hover {
+	opacity: 0.8;
+}
+.gallery {
+	text-align: center;
+}
+.fullscreen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    z-index: 5;
+	float: none;
+	
+    display: none;
+}
+.next-arrow, .prev-arrow {
+    display: block;
+	position: fixed;
+	cursor: pointer;
+	text-align: center;
+	background-color: rgba(0,0,0,0);
+	font-size: 0;
+    width: 100px;
+    height: 100%;
+	padding: 0px 20px 0px 20px;
+    z-index: 10;
+	right: 0px;
+	top:0px;
+}
+.prev-arrow {
+	left: 0px;
+}
+.next-arrow img, .prev-arrow img {
+    display: block;
+    vertical-align: middle;
+    position: relative;
+	z-index: 10;
+}
+.next-arrow:hover, .prev-arrow:hover {
+	background-color: rgba(0,0,0,0.5);
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+.full-img {
+    z-index: 9;
+    box-shadow: 0 0 4px;
+    width: 90%;
+	position: relative;
+	cursor: pointer;
+	max-width: 1243px; 
+	top: 47.45px; 
+	opacity: 1;
+}
+.full-img-container {
+	width:85%; 
+	height: 100%;
+	position: relative;
+}
+.close-gallery {
+	cursor: pointer;
+	top: 30px;
+	right: 10%;
+	position: fixed;
+	z-index: 11;
+}
+.full-spinner {
+	z-index: 8;
+	position: fixed;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 33%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.blast-illi {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+}
+.project-img img {
+	border: none;
+	display: inline-block;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+}
+.project {
+	margin-bottom: 18px;
+	padding: 10px 20px 10px 20px;
+	background-color: #E3E3E3;
+}

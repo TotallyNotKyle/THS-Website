@@ -1,0 +1,725 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>TheHydroblastShop</Name>
+    <RootNamespace>TheHydroblastShop</RootNamespace>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>761af6da-c22c-4fec-aede-3fab55468420</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>index.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="index.js" />
+    <Compile Include="public\bootstrap\js\bootstrap.bundle.js" />
+    <Compile Include="public\bootstrap\js\bootstrap.bundle.min.js" />
+    <Compile Include="public\bootstrap\js\bootstrap.js" />
+    <Compile Include="public\bootstrap\js\bootstrap.min.js" />
+    <Compile Include="public\fancybox\jquery.fancybox.js" />
+    <Compile Include="public\fancybox\jquery.fancybox.min.js" />
+    <Compile Include="public\js\collapse.js" />
+    <Compile Include="public\js\fullscreen.js" />
+    <Compile Include="public\js\gallery.js" />
+    <Content Include="app.yaml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="public\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="public\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="public\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="public\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="public\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="public\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="public\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="public\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="public\bootstrap\css\bootstrap.css" />
+    <Content Include="public\bootstrap\css\bootstrap.css.map" />
+    <Content Include="public\bootstrap\css\bootstrap.min.css" />
+    <Content Include="public\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="public\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="public\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="public\bootstrap\js\bootstrap.js.map" />
+    <Content Include="public\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="public\css\images.css" />
+    <Content Include="public\css\main.css" />
+    <Content Include="public\fancybox\jquery.fancybox.css" />
+    <Content Include="public\fancybox\jquery.fancybox.min.css" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\images\about\wetblasting_illustration_1.jpg" />
+    <Content Include="public\images\about\wetblasting_illustration_2.jpg" />
+    <Content Include="public\images\about\wetblasting_illustration_3.jpg" />
+    <Content Include="public\images\back2.jpg" />
+    <Content Include="public\images\backBlur.jpg" />
+    <Content Include="public\images\backSharp.jpg" />
+    <Content Include="public\images\cylinder_heads.jpg" />
+    <Content Include="public\images\faq\crank_new.jpg" />
+    <Content Include="public\images\faq\engine_new.jpg" />
+    <Content Include="public\images\faq\engine_rusty.jpg" />
+    <Content Include="public\images\faq\fittings.jpg" />
+    <Content Include="public\images\faq\mag_wheel.jpg" />
+    <Content Include="public\images\faq\mag_wheel2.jpg" />
+    <Content Include="public\images\faq\rusty_crank.jpg" />
+    <Content Include="public\images\gallery\arrow-back.png" />
+    <Content Include="public\images\gallery\loader.gif" />
+    <Content Include="public\images\gallery\main\1.jpg" />
+    <Content Include="public\images\gallery\main\10.jpg" />
+    <Content Include="public\images\gallery\main\100.jpg" />
+    <Content Include="public\images\gallery\main\101.jpg" />
+    <Content Include="public\images\gallery\main\102.jpg" />
+    <Content Include="public\images\gallery\main\103.jpg" />
+    <Content Include="public\images\gallery\main\104.jpg" />
+    <Content Include="public\images\gallery\main\105.jpg" />
+    <Content Include="public\images\gallery\main\106.jpg" />
+    <Content Include="public\images\gallery\main\107.jpg" />
+    <Content Include="public\images\gallery\main\108.jpg" />
+    <Content Include="public\images\gallery\main\109.jpg" />
+    <Content Include="public\images\gallery\main\11.jpg" />
+    <Content Include="public\images\gallery\main\110.jpg" />
+    <Content Include="public\images\gallery\main\111.jpg" />
+    <Content Include="public\images\gallery\main\112.jpg" />
+    <Content Include="public\images\gallery\main\12.jpg" />
+    <Content Include="public\images\gallery\main\13.jpg" />
+    <Content Include="public\images\gallery\main\14.jpg" />
+    <Content Include="public\images\gallery\main\15.jpg" />
+    <Content Include="public\images\gallery\main\16.jpg" />
+    <Content Include="public\images\gallery\main\17.jpg" />
+    <Content Include="public\images\gallery\main\18.jpg" />
+    <Content Include="public\images\gallery\main\19.jpg" />
+    <Content Include="public\images\gallery\main\2.jpg" />
+    <Content Include="public\images\gallery\main\20.jpg" />
+    <Content Include="public\images\gallery\main\21.jpg" />
+    <Content Include="public\images\gallery\main\22.jpg" />
+    <Content Include="public\images\gallery\main\23.jpg" />
+    <Content Include="public\images\gallery\main\24.jpg" />
+    <Content Include="public\images\gallery\main\25.jpg" />
+    <Content Include="public\images\gallery\main\26.jpg" />
+    <Content Include="public\images\gallery\main\27.jpg" />
+    <Content Include="public\images\gallery\main\28.jpg" />
+    <Content Include="public\images\gallery\main\29.jpg" />
+    <Content Include="public\images\gallery\main\3.jpg" />
+    <Content Include="public\images\gallery\main\30.jpg" />
+    <Content Include="public\images\gallery\main\31.jpg" />
+    <Content Include="public\images\gallery\main\32.jpg" />
+    <Content Include="public\images\gallery\main\33.jpg" />
+    <Content Include="public\images\gallery\main\34.jpg" />
+    <Content Include="public\images\gallery\main\35.jpg" />
+    <Content Include="public\images\gallery\main\36.jpg" />
+    <Content Include="public\images\gallery\main\37.jpg" />
+    <Content Include="public\images\gallery\main\38.jpg" />
+    <Content Include="public\images\gallery\main\39.jpg" />
+    <Content Include="public\images\gallery\main\4.jpg" />
+    <Content Include="public\images\gallery\main\40.jpg" />
+    <Content Include="public\images\gallery\main\41.jpg" />
+    <Content Include="public\images\gallery\main\42.jpg" />
+    <Content Include="public\images\gallery\main\43.jpg" />
+    <Content Include="public\images\gallery\main\44.jpg" />
+    <Content Include="public\images\gallery\main\45.jpg" />
+    <Content Include="public\images\gallery\main\46.jpg" />
+    <Content Include="public\images\gallery\main\47.jpg" />
+    <Content Include="public\images\gallery\main\48.jpg" />
+    <Content Include="public\images\gallery\main\49.jpg" />
+    <Content Include="public\images\gallery\main\5.jpg" />
+    <Content Include="public\images\gallery\main\50.jpg" />
+    <Content Include="public\images\gallery\main\51.jpg" />
+    <Content Include="public\images\gallery\main\52.jpg" />
+    <Content Include="public\images\gallery\main\53.jpg" />
+    <Content Include="public\images\gallery\main\54.jpg" />
+    <Content Include="public\images\gallery\main\55.jpg" />
+    <Content Include="public\images\gallery\main\56.jpg" />
+    <Content Include="public\images\gallery\main\57.jpg" />
+    <Content Include="public\images\gallery\main\58.jpg" />
+    <Content Include="public\images\gallery\main\59.jpg" />
+    <Content Include="public\images\gallery\main\6.jpg" />
+    <Content Include="public\images\gallery\main\60.jpg" />
+    <Content Include="public\images\gallery\main\61.jpg" />
+    <Content Include="public\images\gallery\main\62.jpg" />
+    <Content Include="public\images\gallery\main\63.jpg" />
+    <Content Include="public\images\gallery\main\64.jpg" />
+    <Content Include="public\images\gallery\main\65.jpg" />
+    <Content Include="public\images\gallery\main\66.jpg" />
+    <Content Include="public\images\gallery\main\67.jpg" />
+    <Content Include="public\images\gallery\main\68.jpg" />
+    <Content Include="public\images\gallery\main\69.jpg" />
+    <Content Include="public\images\gallery\main\7.jpg" />
+    <Content Include="public\images\gallery\main\70.jpg" />
+    <Content Include="public\images\gallery\main\71.jpg" />
+    <Content Include="public\images\gallery\main\72.jpg" />
+    <Content Include="public\images\gallery\main\73.jpg" />
+    <Content Include="public\images\gallery\main\74.jpg" />
+    <Content Include="public\images\gallery\main\75.jpg" />
+    <Content Include="public\images\gallery\main\76.jpg" />
+    <Content Include="public\images\gallery\main\77.jpg" />
+    <Content Include="public\images\gallery\main\78.jpg" />
+    <Content Include="public\images\gallery\main\79.jpg" />
+    <Content Include="public\images\gallery\main\8.jpg" />
+    <Content Include="public\images\gallery\main\80.jpg" />
+    <Content Include="public\images\gallery\main\81.jpg" />
+    <Content Include="public\images\gallery\main\82.jpg" />
+    <Content Include="public\images\gallery\main\83.jpg" />
+    <Content Include="public\images\gallery\main\84.jpg" />
+    <Content Include="public\images\gallery\main\85.jpg" />
+    <Content Include="public\images\gallery\main\86.jpg" />
+    <Content Include="public\images\gallery\main\87.jpg" />
+    <Content Include="public\images\gallery\main\88.jpg" />
+    <Content Include="public\images\gallery\main\89.jpg" />
+    <Content Include="public\images\gallery\main\9.jpg" />
+    <Content Include="public\images\gallery\main\90.jpg" />
+    <Content Include="public\images\gallery\main\91.jpg" />
+    <Content Include="public\images\gallery\main\92.jpg" />
+    <Content Include="public\images\gallery\main\93.jpg" />
+    <Content Include="public\images\gallery\main\94.jpg" />
+    <Content Include="public\images\gallery\main\95.jpg" />
+    <Content Include="public\images\gallery\main\96.jpg" />
+    <Content Include="public\images\gallery\main\97.jpg" />
+    <Content Include="public\images\gallery\main\98.jpg" />
+    <Content Include="public\images\gallery\main\99.jpg" />
+    <Content Include="public\images\gallery\main\temp\116.jpg" />
+    <Content Include="public\images\gallery\main\temp\117.jpg" />
+    <Content Include="public\images\gallery\main\temp\118.jpg" />
+    <Content Include="public\images\gallery\main\temp\119.jpg" />
+    <Content Include="public\images\gallery\main\temp\120.jpg" />
+    <Content Include="public\images\gallery\main\temp\121.jpg" />
+    <Content Include="public\images\gallery\main\thumb\1.jpg" />
+    <Content Include="public\images\gallery\main\thumb\10.jpg" />
+    <Content Include="public\images\gallery\main\thumb\100.jpg" />
+    <Content Include="public\images\gallery\main\thumb\101.jpg" />
+    <Content Include="public\images\gallery\main\thumb\102.jpg" />
+    <Content Include="public\images\gallery\main\thumb\103.jpg" />
+    <Content Include="public\images\gallery\main\thumb\104.jpg" />
+    <Content Include="public\images\gallery\main\thumb\105.jpg" />
+    <Content Include="public\images\gallery\main\thumb\106.jpg" />
+    <Content Include="public\images\gallery\main\thumb\107.jpg" />
+    <Content Include="public\images\gallery\main\thumb\108.jpg" />
+    <Content Include="public\images\gallery\main\thumb\109.jpg" />
+    <Content Include="public\images\gallery\main\thumb\11.jpg" />
+    <Content Include="public\images\gallery\main\thumb\110.jpg" />
+    <Content Include="public\images\gallery\main\thumb\111.jpg" />
+    <Content Include="public\images\gallery\main\thumb\112.jpg" />
+    <Content Include="public\images\gallery\main\thumb\12.jpg" />
+    <Content Include="public\images\gallery\main\thumb\13.jpg" />
+    <Content Include="public\images\gallery\main\thumb\14.jpg" />
+    <Content Include="public\images\gallery\main\thumb\15.jpg" />
+    <Content Include="public\images\gallery\main\thumb\16.jpg" />
+    <Content Include="public\images\gallery\main\thumb\17.jpg" />
+    <Content Include="public\images\gallery\main\thumb\18.jpg" />
+    <Content Include="public\images\gallery\main\thumb\19.jpg" />
+    <Content Include="public\images\gallery\main\thumb\2.jpg" />
+    <Content Include="public\images\gallery\main\thumb\20.jpg" />
+    <Content Include="public\images\gallery\main\thumb\21.jpg" />
+    <Content Include="public\images\gallery\main\thumb\22.jpg" />
+    <Content Include="public\images\gallery\main\thumb\23.jpg" />
+    <Content Include="public\images\gallery\main\thumb\24.jpg" />
+    <Content Include="public\images\gallery\main\thumb\25.jpg" />
+    <Content Include="public\images\gallery\main\thumb\26.jpg" />
+    <Content Include="public\images\gallery\main\thumb\27.jpg" />
+    <Content Include="public\images\gallery\main\thumb\28.jpg" />
+    <Content Include="public\images\gallery\main\thumb\29.jpg" />
+    <Content Include="public\images\gallery\main\thumb\3.jpg" />
+    <Content Include="public\images\gallery\main\thumb\30.jpg" />
+    <Content Include="public\images\gallery\main\thumb\31.jpg" />
+    <Content Include="public\images\gallery\main\thumb\32.jpg" />
+    <Content Include="public\images\gallery\main\thumb\33.jpg" />
+    <Content Include="public\images\gallery\main\thumb\34.jpg" />
+    <Content Include="public\images\gallery\main\thumb\35.jpg" />
+    <Content Include="public\images\gallery\main\thumb\36.jpg" />
+    <Content Include="public\images\gallery\main\thumb\37.jpg" />
+    <Content Include="public\images\gallery\main\thumb\38.jpg" />
+    <Content Include="public\images\gallery\main\thumb\39.jpg" />
+    <Content Include="public\images\gallery\main\thumb\4.jpg" />
+    <Content Include="public\images\gallery\main\thumb\40.jpg" />
+    <Content Include="public\images\gallery\main\thumb\41.jpg" />
+    <Content Include="public\images\gallery\main\thumb\42.jpg" />
+    <Content Include="public\images\gallery\main\thumb\43.jpg" />
+    <Content Include="public\images\gallery\main\thumb\44.jpg" />
+    <Content Include="public\images\gallery\main\thumb\45.jpg" />
+    <Content Include="public\images\gallery\main\thumb\46.jpg" />
+    <Content Include="public\images\gallery\main\thumb\47.jpg" />
+    <Content Include="public\images\gallery\main\thumb\48.jpg" />
+    <Content Include="public\images\gallery\main\thumb\49.jpg" />
+    <Content Include="public\images\gallery\main\thumb\5.jpg" />
+    <Content Include="public\images\gallery\main\thumb\50.jpg" />
+    <Content Include="public\images\gallery\main\thumb\51.jpg" />
+    <Content Include="public\images\gallery\main\thumb\52.jpg" />
+    <Content Include="public\images\gallery\main\thumb\53.jpg" />
+    <Content Include="public\images\gallery\main\thumb\54.jpg" />
+    <Content Include="public\images\gallery\main\thumb\55.jpg" />
+    <Content Include="public\images\gallery\main\thumb\56.jpg" />
+    <Content Include="public\images\gallery\main\thumb\57.jpg" />
+    <Content Include="public\images\gallery\main\thumb\58.jpg" />
+    <Content Include="public\images\gallery\main\thumb\59.jpg" />
+    <Content Include="public\images\gallery\main\thumb\6.jpg" />
+    <Content Include="public\images\gallery\main\thumb\60.jpg" />
+    <Content Include="public\images\gallery\main\thumb\61.jpg" />
+    <Content Include="public\images\gallery\main\thumb\62.jpg" />
+    <Content Include="public\images\gallery\main\thumb\63.jpg" />
+    <Content Include="public\images\gallery\main\thumb\64.jpg" />
+    <Content Include="public\images\gallery\main\thumb\65.jpg" />
+    <Content Include="public\images\gallery\main\thumb\66.jpg" />
+    <Content Include="public\images\gallery\main\thumb\67.jpg" />
+    <Content Include="public\images\gallery\main\thumb\68.jpg" />
+    <Content Include="public\images\gallery\main\thumb\69.jpg" />
+    <Content Include="public\images\gallery\main\thumb\7.jpg" />
+    <Content Include="public\images\gallery\main\thumb\70.jpg" />
+    <Content Include="public\images\gallery\main\thumb\71.jpg" />
+    <Content Include="public\images\gallery\main\thumb\72.jpg" />
+    <Content Include="public\images\gallery\main\thumb\73.jpg" />
+    <Content Include="public\images\gallery\main\thumb\74.jpg" />
+    <Content Include="public\images\gallery\main\thumb\75.jpg" />
+    <Content Include="public\images\gallery\main\thumb\76.jpg" />
+    <Content Include="public\images\gallery\main\thumb\77.jpg" />
+    <Content Include="public\images\gallery\main\thumb\78.jpg" />
+    <Content Include="public\images\gallery\main\thumb\79.jpg" />
+    <Content Include="public\images\gallery\main\thumb\8.jpg" />
+    <Content Include="public\images\gallery\main\thumb\80.jpg" />
+    <Content Include="public\images\gallery\main\thumb\81.jpg" />
+    <Content Include="public\images\gallery\main\thumb\82.jpg" />
+    <Content Include="public\images\gallery\main\thumb\83.jpg" />
+    <Content Include="public\images\gallery\main\thumb\84.jpg" />
+    <Content Include="public\images\gallery\main\thumb\85.jpg" />
+    <Content Include="public\images\gallery\main\thumb\86.jpg" />
+    <Content Include="public\images\gallery\main\thumb\87.jpg" />
+    <Content Include="public\images\gallery\main\thumb\88.jpg" />
+    <Content Include="public\images\gallery\main\thumb\89.jpg" />
+    <Content Include="public\images\gallery\main\thumb\9.jpg" />
+    <Content Include="public\images\gallery\main\thumb\90.jpg" />
+    <Content Include="public\images\gallery\main\thumb\91.jpg" />
+    <Content Include="public\images\gallery\main\thumb\92.jpg" />
+    <Content Include="public\images\gallery\main\thumb\93.jpg" />
+    <Content Include="public\images\gallery\main\thumb\94.jpg" />
+    <Content Include="public\images\gallery\main\thumb\95.jpg" />
+    <Content Include="public\images\gallery\main\thumb\96.jpg" />
+    <Content Include="public\images\gallery\main\thumb\97.jpg" />
+    <Content Include="public\images\gallery\main\thumb\98.jpg" />
+    <Content Include="public\images\gallery\main\thumb\99.jpg" />
+    <Content Include="public\images\gallery\next-arrow.png" />
+    <Content Include="public\images\gallery\prev-arrow.png" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\1.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\10.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\11.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\12.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\13.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\14.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\15.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\2.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\3.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\4.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\5.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\6.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\7.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\8.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\9.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\1.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\10.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\11.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\12.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\13.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\14.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\15.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\2.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\3.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\4.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\5.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\6.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\7.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\8.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RD350LC\thumb\9.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\1.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\10.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\11.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\12.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\13.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\14.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\2.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\3.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\4.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\5.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\6.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\7.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\8.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\9.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\1.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\10.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\11.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\12.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\13.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\14.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\2.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\3.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\4.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\5.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\6.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\7.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\8.jpg" />
+    <Content Include="public\images\gallery\projects\Als_RZ350\thumb\9.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\1.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\2.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\3.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\4.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\5.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\6.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\7.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\thumb\1.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\thumb\2.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\thumb\3.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\thumb\4.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\thumb\5.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\thumb\6.jpg" />
+    <Content Include="public\images\gallery\projects\Als_Z1300\thumb\7.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\1.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\10.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\11.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\12.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\13.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\14.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\15.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\16.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\2.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\3.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\4.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\5.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\6.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\7.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\8.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\9.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\1.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\10.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\11.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\12.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\13.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\14.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\15.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\16.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\2.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\3.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\4.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\5.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\6.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\7.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\8.jpg" />
+    <Content Include="public\images\gallery\projects\Barts_R5\thumb\9.jpg" />
+    <Content Include="public\images\gallery\projects\Cafe_Moto_RD250LC\1.jpg" />
+    <Content Include="public\images\gallery\projects\Cafe_Moto_RD250LC\2.jpg" />
+    <Content Include="public\images\gallery\projects\Cafe_Moto_RD250LC\3.jpg" />
+    <Content Include="public\images\gallery\projects\Cafe_Moto_RD250LC\4.jpg" />
+    <Content Include="public\images\gallery\projects\Cafe_Moto_RD250LC\5.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\1.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\10.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\11.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\12.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\13.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\14.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\15.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\16.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\17.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\18.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\19.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\2.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\20.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\21.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\22.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\23.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\24.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\25.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\26.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\27.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\28.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\3.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\4.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\5.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\6.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\7.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\8.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\9.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\1.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\10.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\11.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\12.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\13.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\14.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\15.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\16.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\17.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\18.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\19.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\2.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\20.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\21.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\22.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\23.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\24.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\25.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\26.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\27.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\28.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\3.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\4.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\5.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\6.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\7.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\8.jpg" />
+    <Content Include="public\images\gallery\projects\Geoffs_RD400\thumb\9.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CB900F\IMG-20160918-WA0001.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CB900F\IMG-20160918-WA0014.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CB900F\IMG-20160918-WA0015.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CB900F\IMG-20160918-WA0016.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\1.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\10.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\11.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\12.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\13.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\14.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\15.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\16.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\17.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\18.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\19.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\2.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\20.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\21.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\3.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\4.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\5.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\6.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\7.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\8.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\9.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\1.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\10.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\11.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\12.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\13.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\14.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\15.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\16.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\17.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\18.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\19.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\2.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\20.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\21.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\3.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\4.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\5.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\6.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\7.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\8.jpg" />
+    <Content Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\9.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\1.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\2.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\3.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\4.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\5.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\6.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\7.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\8.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\thumb\1.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\thumb\2.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\thumb\3.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\thumb\4.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\thumb\5.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\thumb\6.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\thumb\7.jpg" />
+    <Content Include="public\images\gallery\projects\Misos_Z650\thumb\8.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\1.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\10.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\11.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\12.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\13.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\14.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\15.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\16.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\17.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\18.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\19.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\2.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\20.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\21.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\22.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\23.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\24.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\25.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\26.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\27.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\28.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\29.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\3.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\30.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\31.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\32.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\33.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\34.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\35.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\4.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\5.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\6.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\7.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\8.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\9.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\1.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\10.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\11.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\12.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\13.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\14.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\15.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\16.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\17.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\18.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\19.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\2.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\20.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\21.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\22.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\23.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\24.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\25.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\26.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\27.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\28.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\29.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\3.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\30.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\31.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\32.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\33.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\34.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\35.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\4.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\5.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\6.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\7.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\8.jpg" />
+    <Content Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\9.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\1.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\2.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\3.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\4.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\5.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\6.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\7.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\thumb\1.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\thumb\2.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\thumb\3.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\thumb\4.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\thumb\5.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\thumb\6.jpg" />
+    <Content Include="public\images\gallery\projects\Steves_RZ350\thumb\7.jpg" />
+    <Content Include="public\images\header.png" />
+    <Content Include="public\images\parts.jpg" />
+    <Content Include="public\images\shop.jpg" />
+    <Content Include="public\images\welcome.jpg" />
+    <Content Include="public\js\photos.json" />
+    <Content Include="public\Templates\template.dwt" />
+    <Content Include="public\Terms of Use - The Hydroblast Shop.pdf" />
+    <Content Include="public\views\404.html" />
+    <Content Include="public\views\about.html" />
+    <Content Include="public\views\contact.html" />
+    <Content Include="public\views\faq.html" />
+    <Content Include="public\views\gallery.html" />
+    <Content Include="public\views\home.html" />
+    <Content Include="public\views\pricing.html" />
+    <Content Include="public\views\projects.html" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\bootstrap\" />
+    <Folder Include="public\bootstrap\css\" />
+    <Folder Include="public\bootstrap\js\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\fancybox\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\images\about\" />
+    <Folder Include="public\images\faq\" />
+    <Folder Include="public\images\gallery\" />
+    <Folder Include="public\images\gallery\main\" />
+    <Folder Include="public\images\gallery\main\temp\" />
+    <Folder Include="public\images\gallery\main\thumb\" />
+    <Folder Include="public\images\gallery\projects\" />
+    <Folder Include="public\images\gallery\projects\Als_RD350LC\" />
+    <Folder Include="public\images\gallery\projects\Als_RD350LC\thumb\" />
+    <Folder Include="public\images\gallery\projects\Als_RZ350\" />
+    <Folder Include="public\images\gallery\projects\Als_RZ350\thumb\" />
+    <Folder Include="public\images\gallery\projects\Als_Z1300\" />
+    <Folder Include="public\images\gallery\projects\Als_Z1300\thumb\" />
+    <Folder Include="public\images\gallery\projects\Barts_R5\" />
+    <Folder Include="public\images\gallery\projects\Barts_R5\thumb\" />
+    <Folder Include="public\images\gallery\projects\Cafe_Moto_RD250LC\" />
+    <Folder Include="public\images\gallery\projects\Geoffs_RD400\" />
+    <Folder Include="public\images\gallery\projects\Geoffs_RD400\thumb\" />
+    <Folder Include="public\images\gallery\projects\Malcolms_CB900F\" />
+    <Folder Include="public\images\gallery\projects\Malcolms_CX500_custom\" />
+    <Folder Include="public\images\gallery\projects\Malcolms_CX500_custom\thumb\" />
+    <Folder Include="public\images\gallery\projects\Misos_Z650\" />
+    <Folder Include="public\images\gallery\projects\Misos_Z650\thumb\" />
+    <Folder Include="public\images\gallery\projects\Phils_Benelli_750Sei\" />
+    <Folder Include="public\images\gallery\projects\Phils_Benelli_750Sei\thumb\" />
+    <Folder Include="public\images\gallery\projects\Steves_RZ350\" />
+    <Folder Include="public\images\gallery\projects\Steves_RZ350\thumb\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\Templates\" />
+    <Folder Include="public\template\" />
+    <Folder Include="public\views\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

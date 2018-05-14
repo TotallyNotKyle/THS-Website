@@ -1,0 +1,15 @@
+{
+  "name": "the-hydroblast-shop",
+  "version": "0.0.0",
+  "description": "TheHydroblastShop",
+  "main": "index.js",
+  "author": {
+    "name": "Kyle Sutton"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "scripts": {
+    "start": "node index.js" 
+  }
+}

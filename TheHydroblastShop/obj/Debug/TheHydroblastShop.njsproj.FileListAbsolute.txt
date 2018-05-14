@@ -1,0 +1,3 @@
+C:\Users\Kyle\source\repos\TheHydroblastShop\TheHydroblastShop\obj\Debug\TheHydroblastShop.njsprojResolveAssemblyReference.cache
+C:\Users\Kyle\source\repos\TheHydroblastShop\TheHydroblastShop\obj\Debug\TheHydroblastShop.njsproj.CoreCompileInputs.cache
+C:\Users\Kyle\source\repos\TheHydroblastShop\TheHydroblastShop\bin\Microsoft.NodejsTools.WebRole.dll
